@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Remember the Box</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+<link rel="stylesheet" href="../css/codestyle.css">
+</head>
+<body>
+
+<div class="container"></div>
+
+<script type="text/template" id="app-template"></script>
+<div id="head">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+			<h1>Find the Box</h1>
+			<p>After clicking "Start", nine boxes will be highlighted and then disappear after 5 seconds. You must remember the highlighted boxes and select them. If you click all of the highlighted boxes without clicking a wrong box, you win!</p>
+		</div>
+	</div>
+</div>
+<div id="controls" class="row">
+	<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+		<p id="successMessage" class="successMessage message" style="display:none">You win! Click "Reset" to play again.</p>
+		<p id="errorMessage" class="errorMessage message" style="display:none">Boohoo! Click "Reset" to Try again.</p>
+		<a id="startGame" class="btn btn-primary btn-lg" style="display:none">Start</a>
+		<a id="resetGame" class="btn btn-primary btn-lg" style="display:none">Reset</a>
+		<hr>
+	</div>
+</div>
+<div id="gameContainer"></div>
+
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+<script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/backbone.js"></script>
+<script src="../js/code.js"></script>
+</body>
+</html>
